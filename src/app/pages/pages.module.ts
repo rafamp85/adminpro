@@ -19,6 +19,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
         Graficas1Component,
         IncrementadorComponent,
         GraficoDonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [
         DashboardComponent,
