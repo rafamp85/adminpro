@@ -1,9 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { UsuarioService, LoginGuardGuard } from './service.index';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
+  ],
+  providers: [
+    UsuarioService,
+    LoginGuardGuard
   ],
   declarations: []
 })
