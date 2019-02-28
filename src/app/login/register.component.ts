@@ -22,24 +22,6 @@ export class RegisterComponent implements OnInit {
     public router: Router
   ) { }
 
-  sonIguales( campo1: string, campo2: string ) {
-
-    return ( group: FormGroup ) => {
-
-      let pass1 = group.controls[campo1].value;
-      let pass2 = group.controls[campo2].value;
-
-      if ( pass1 === pass2 ) {
-        return null;
-      }
-
-      return {
-        sonIguales: true
-      };
-
-    };
-  }
-
   ngOnInit() {
     init_plugins();
 
@@ -59,6 +41,25 @@ export class RegisterComponent implements OnInit {
       condiciones: true
     });
 
+  }
+
+
+  sonIguales( campo1: string, campo2: string ) {
+
+    return ( group: FormGroup ) => {
+
+      let pass1 = group.controls[campo1].value;
+      let pass2 = group.controls[campo2].value;
+
+      if ( pass1 === pass2 ) {
+        return null;
+      }
+
+      return {
+        sonIguales: true
+      };
+
+    };
   }
 
 
